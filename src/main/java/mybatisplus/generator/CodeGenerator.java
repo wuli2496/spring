@@ -45,7 +45,7 @@ public class CodeGenerator {
         dataSourceConfig.setUrl("jdbc:mysql://localhost:3306/test?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=GMT");
         dataSourceConfig.setDriverName("com.mysql.cj.jdbc.Driver");
         dataSourceConfig.setUsername("root");
-        dataSourceConfig.setPassword("336699");
+        dataSourceConfig.setPassword("");
         autoGenerator.setDataSource(dataSourceConfig);
 
         final PackageConfig packageConfig = new PackageConfig();
