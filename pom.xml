@@ -21,6 +21,9 @@
     <jakarta.el.version>3.0.3</jakarta.el.version>
     <mybatis.version>3.5.5</mybatis.version>
     <mysql-connector.version>8.0.21</mysql-connector.version>
+    <mybatis-plus.version>3.4.0</mybatis-plus.version>
+    <guava.version>29.0-jre</guava.version>
+    <freemarker.verion>2.3.30</freemarker.verion>
   </properties>
 
   <dependencyManagement>
@@ -94,6 +97,26 @@
       	<artifactId>mysql-connector-java</artifactId>
       	<version>${mysql-connector.version}</version>
       </dependency>
+
+      <dependency>
+          <groupId>com.baomidou</groupId>
+          <artifactId>mybatis-plus-generator</artifactId>
+          <version>${mybatis-plus.version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>com.google.guava</groupId>
+          <artifactId>guava</artifactId>
+          <version>${guava.version}</version>
+      </dependency>
+
+      <!--
+      <dependency>
+          <groupId>org.freemarker</groupId>
+          <artifactId>freemarker</artifactId>
+          <version>${freemarker.verion}</version>
+      </dependency>
+      -->
   </dependencies>
 
   <build>
