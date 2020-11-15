@@ -1,4 +1,4 @@
-package mybatis.entity;
+package mine.mybatis.entity;
 
 import java.util.List;
 

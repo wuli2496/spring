@@ -11,7 +11,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import lombok.extern.slf4j.Slf4j;
-import mybatis.entity.Blog;
+import mine.mybatis.entity.Blog;
 
 @Slf4j
 public class TestMybatis {
@@ -28,7 +28,7 @@ public class TestMybatis {
 	
 	@Test
 	public void testSelectById() {
-		List<Blog> blogs = sqlSession.selectList("mybatis.dao.BlogDao.selectById", 1);
+		List<Blog> blogs = sqlSession.selectList("mine.mybatis.dao.BlogDao.selectById", 1);
 		
 		log.info("size:{}, blogs:{}", blogs.size(), blogs);
 		

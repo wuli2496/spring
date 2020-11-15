@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="mybatis.dao.BlogDao">
-	<resultMap id="detailedBlogResultMap" type="mybatis.entity.Blog">
+<mapper namespace="mine.mybatis.dao.BlogDao">
+	<resultMap id="detailedBlogResultMap" type="mine.mybatis.entity.Blog">
 		<id property="id" column="blog_id"/>
 		<result property="title" column="blog_title"/>
-		<association property="author" javaType="mybatis.entity.Author">
+		<association property="author" javaType="mine.mybatis.entity.Author">
 			<id property="id" column="author_id"/>
 			<result property="username" column="author_username"/>
 			<result property="password" column="author_password"/>
 			<result property="email" column="author_email"/>
 		</association>
-		<collection property="posts" ofType="mybatis.entity.Post">
+		<collection property="posts" ofType="mine.mybatis.entity.Post">
 			<id property="id" column="post_id"/>
 			<result property="blogId" column="post_blog_id"/>
 			<result property="content" column="post_content"/>
